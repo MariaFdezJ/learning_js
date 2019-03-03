@@ -111,3 +111,85 @@ function truncateString(str, num) {
 }
 
 truncateString('A-tisket a-tasket A green and yellow basket', 8);
+
+// Finders Keepers
+function findElement(arr, func) {
+    let num = arr.filter(func)[0];
+    return num;
+}
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
+
+// Boo who
+function booWho(bool) {
+    if ( typeof bool === 'boolean'){
+        return true;
+    }
+    return false;
+}
+
+booWho(null);
+
+// Title Case a Sentence
+function titleCase(str) {
+    str = str.toLowerCase().split(' ');
+    str = str.map(letter => letter[0].toUpperCase() + letter.slice(1) );
+    return str.join(' ');
+}
+
+titleCase('I\'m a little tea pot');
+
+// Slice and Splice
+function frankenSplice(arr1, arr2, n) {
+    let temp = arr2.slice(0);
+
+    temp.splice(n,0,...arr1);
+
+    return temp;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+// Falsy Bouncer
+function bouncer(arr) {
+    arr = arr.filter(x => { if(x) return x; });
+    return arr;
+}
+
+bouncer([7, 'ate', '', false, 9]);
+
+// Where do I Belong
+function getIndexToIns(arr, num) {
+    let index = 0;
+    arr.forEach(item => { if(item < num) index++; });
+    return index;
+}
+
+getIndexToIns([40, 60], 50);
+
+// Mutations
+function mutation(arr) {
+    let result = true;
+
+    for(let i = 0; i < arr[1].length; i++){
+        let letter = arr[1][i].toLowerCase();
+        if(arr[0].toLowerCase().indexOf(letter) < 0){
+            result = false;
+        }
+    }
+
+    return result;
+}
+
+mutation(['hello', 'hey']);
+
+// Chunky Monkey
+function chunkArrayInGroups(arr, size) {
+    let result = [];
+    for(let i = 0; i < arr.length; i+=size){
+        result.push(arr.slice(i,i+size));
+    }
+    return result;
+}
+
+chunkArrayInGroups(['a', 'b', 'c', 'd','e'], 2);
