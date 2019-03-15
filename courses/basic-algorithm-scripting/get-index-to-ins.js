@@ -3,11 +3,11 @@ function getIndexToIns(arr, num) {
 
     return arr.reduce( (acc, item)  => {
 
-    	if(item < num) {
-    		acc++;
-    	}
+        if(item < num) {
+            acc++;
+        }
 
-    	return acc;
+        return acc;
     }, 0);
 }
 

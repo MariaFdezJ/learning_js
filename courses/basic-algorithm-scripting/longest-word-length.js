@@ -1,11 +1,13 @@
 
 function findLongestWordLength(str) {
 
-	str = str.split(' ').reduce( (word, comparator) => {
-    	return word.length > comparator.length ? word : comparator;
-    });
+    let strArray = str.split(' ');
 
-    return str.length;
+    return strArray.reduce( (longestWordLength, word) =>
+        longestWordLength > word.length
+            ? longestWordLength
+            : word.length
+    , 0);
 }
 
 findLongestWordLength('The quick brown fox jumped over the lazy dog');
