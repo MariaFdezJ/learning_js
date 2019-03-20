@@ -1,4 +1,4 @@
-/*
+/**
  * Provide biggest numbers of four arrays.
  *
  * @param {Array.<Array>} arr - Array of four arrays of numbers.
