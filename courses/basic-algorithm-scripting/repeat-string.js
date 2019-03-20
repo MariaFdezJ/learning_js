@@ -1,4 +1,11 @@
-
+/**
+ * Repeats string as many times as requested.
+ *
+ * @param {string} str - String to be repeated.
+ * @param {number} num - Amount of times to repeat the string.
+ *
+ * @return {string} Repated string.
+ */
 function repeatStringNumTimes(str, num) {
     // To keep in mind that it was specified NOT to use repeat method
     if(num <= 0){

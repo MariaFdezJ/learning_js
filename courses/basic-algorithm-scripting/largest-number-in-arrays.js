@@ -1,4 +1,10 @@
-
+/*
+ * Provide biggest numbers of four arrays.
+ *
+ * @param {Array.<Array>} arr - Array of four arrays of numbers.
+ *
+ * @return {Array} An array with the biggest numbers of each array provided.
+ */
 function largestOfFour(arr) {
 
     let largestNumbers = [];

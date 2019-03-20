@@ -1,4 +1,10 @@
-
+/**
+ * Factorializes a given number.
+ *
+ * @param {number} num - The number to be factorialized.
+ *
+ * @return {number} The result of factorializing.
+ */
 function factorialize(num) {
 
     if(num === 0){

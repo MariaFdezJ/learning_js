@@ -1,4 +1,11 @@
-
+/**
+ * Splits array into groups of specified size, into two dimensional array.
+ *
+ * @param {Array} arr - Array to be split.
+ * @param {number} size - Length of the array groups.
+ *
+ * @return {Array} Two dimensional array.
+ */
 function chunkArrayInGroups(arr, size) {
 
     let resultArr = [];

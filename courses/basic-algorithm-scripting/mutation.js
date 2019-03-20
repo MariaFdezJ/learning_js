@@ -1,4 +1,10 @@
-
+/**
+ * Checks if all letters of a string are present in another string.
+ *
+ * @param {Array.<string>} arr - Array of two strings.
+ *
+ * @return {boolean} The check status.
+ */
 function mutation(arr) {
 
     let result = true;

@@ -1,6 +1,14 @@
-
+/**
+ * Check if a string ends with a specified string.
+ *
+ * Do not use endsWith method.
+ *
+ * @param {string} str - The string to verify.
+ * @param {string} target - Target end to confirm.
+ *
+ * @return {boolean} Status of check.
+ */
 function confirmEnding(str, target) {
-    // To keep in mind that it was specified NOT to use endsWith method
     return str.slice(-target.length) === target;
 }
 

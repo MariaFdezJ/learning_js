@@ -1,4 +1,10 @@
-
+/**
+ * Find length of longest word on a provided sentence.
+ *
+ * @param {string} str - Sentence to get the longest word of.
+ *
+ * @return {number} The length of the longest word.
+ */
 function findLongestWordLength(str) {
 
     let strArray = str.split(' ');

@@ -1,4 +1,10 @@
-
+/**
+ * Makes a sentence where first letter of each word is capitalized.
+ *
+ * @param {string} str - Sentence to be transformed.
+ *
+ * @return {string} Sentence transformed to Title Case.
+ */
 function titleCase(str) {
 
     let strArray = str.toLowerCase().split(' ');
